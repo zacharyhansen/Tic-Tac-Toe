@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic Tac Toe</title>
+  <style>
+    /* background-image: url; */
+
+    td,
+    table {
+      table-layout: fixed;
+      border: 3px solid black;
+      border-collapse: collapse;
+      border-spacing: 5px;
+
+      size: 200%;
+      align-content: center;
+      width: 20%;
+      height: 100px;
+    }
+
+    tbody td {
+      text-align: center;
+      font-size: 200%;
+    }
+  </style>
+</head>
+
+<body align='center'>
+  <h1>Tic Tac Taco</h1>
+  <form ID='usernames'>
+    <p1>Please enter your Usernames</p1>
+    <div>
+      X-Player:
+      <input id='user1' type="text"> O-Player:
+      <input id='user2' type="text">
+    </div>
+    <div>
+      <input type='button' class='submit' value='Submit' onclick="createUserNames()">
+    </div>
+  </form>
+  <br>
+  <table align='center' class='board'>
+    <caption>Lets Play Some Tic Tac Toe</caption>
+  </table>
+  <br>
+  <p1 class='result'>Moves are still available</p1>
+  <br>
+  <button onclick="resetGame()">Reset Game</button>
+  <br>
+  <br>
+  <p1 class='winner'>Previous Winner: No Player has won yet :(</p1>
+  <br>
+  <br>
+  <div class='tally'>
+    <p1 class='x'>X Games Won: 0</p1>
+    <br>
+    <p1 class='o'>O Games Won: 0</p1>
+  </div>
+  <script src='app.js'></script>
+</body>
+
+</html>
